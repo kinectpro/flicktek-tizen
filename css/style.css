@@ -1,0 +1,172 @@
+.ui-listview li {
+    position: relative;
+}
+
+.ui-listview li.li-has-toggle > label {
+    display: block;
+    padding: 31.5px 94px 31.5px 40px;
+    margin: -30px -8px -21px -38px;
+}
+
+.ui-listview .li-has-toggle .ui-toggleswitch {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    -webkit-transform: translate3d(0, -50%, 0);
+    display: block;
+    margin: 0 auto;
+}
+
+.ui-listview li.li-has-multiline {
+    padding-top: 6px;
+    padding-bottom: 5px;
+    min-height: 100px;
+}
+
+.ui-listview li.li-has-multiline > a {
+    margin-top: -6px;
+    margin-bottom: -6px;
+    padding-top: 11px;
+    padding-bottom: 12px;
+}
+
+.ui-listview li .ui-li-sub-text {
+    display: block;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    line-height: 32px;
+}
+
+.ui-listview li.li-has-toggle > label {
+    padding: 27px 94px 21px 40px;
+}
+
+#devices-scan-stop-button {
+    display: none;
+}
+
+#devices-page.state-scanning #devices-scan-stop-button {
+    display: block;
+}
+
+#devices-page.state-scanning #devices-scan-button {
+    display: none;
+}
+
+#devices-page .ui-processing {
+    display: none;
+}
+
+#le-devices-scan-stop-button {
+    display: none;
+}
+
+#le-devices-page.state-scanning #le-devices-scan-stop-button {
+    display: block;
+}
+
+#le-devices-page.state-scanning #le-devices-scan-button {
+    display: none;
+}
+
+#le-devices-page .ui-processing {
+    display: none;
+}
+
+#device-info-page.state-pairing #pair-btn-label-default {
+    display: none;
+}
+
+#device-info-page #pair-btn-label-pairing {
+    display: none;
+}
+
+#device-info-page.state-pairing #pair-btn-label-pairing {
+    display: inline;
+}
+
+#device-info-page.state-unpairing #unpair-btn-label-default {
+    display: none;
+}
+
+#device-info-page #unpair-btn-label-unpairing {
+    display: none;
+}
+
+#device-info-page.state-unpairing #unpair-btn-label-unpairing {
+    display: inline;
+}
+
+#send-file-page footer {
+    display: none;
+}
+
+#info-mode-container {
+    padding: 43px 10px;
+    display: none;
+}
+
+#send-file-page.info-mode #info-mode-container,
+#send-file-page.info-mode footer {
+    display: block;
+}
+
+#send-file-page.info-mode #progress-mode-container {
+    display: none;
+}
+
+#progress-mode-container {
+    padding-top: 43px;
+    height: 100%;
+    position: relative;
+}
+
+#progress-value {
+    position: absolute;
+    left: 45%;
+    font-size: 45px;
+    width: 115px;
+    text-align: center;
+}
+
+#send-file-page .ui-progressbar {
+    position: absolute;
+    left: 27%;
+}
+
+@media all and (-tizen-geometric-shape: circle) {
+    .ui-listview li {
+        margin-top: 0;
+    }
+
+    .ui-listview li.li-has-toggle > label {
+        margin: -17px -40px;
+        padding: 17px 100px 17px 30px;
+    }
+
+    .ui-listview .li-has-toggle .ui-toggleswitch {
+        right: 16px;
+    }
+
+    .ui-listview li.li-has-multiline > a {
+        margin-top: -17px;
+        margin-bottom: -17px;
+        padding-top: 17px;
+        padding-bottom: 17px;
+    }
+
+    .ui-listview.ui-snap-listview li.li-has-multiline {
+        padding-top: 17px;
+        padding-bottom: 17px;
+        min-height: 108px;
+        line-height: normal;
+    }
+
+    #devices-page.state-scanning .ui-processing {
+        display: block;
+    }
+    
+    #le-devices-page.state-scanning .ui-processing {
+        display: block;
+    }
+}
